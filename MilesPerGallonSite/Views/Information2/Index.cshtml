@@ -1,0 +1,92 @@
+﻿@model IEnumerable<MilesPerGallonSite.Models.InformationView>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+
+    @using (Html.BeginForm("Index", "Information2", FormMethod.Post))
+    {
+<p>
+    
+    Name: <input type="text" name="searchName" />
+    Model: <input type="text" name="searchModel" />
+     Start: <input type="date" name="startDate" />
+    End: <input type="date" name="endDate" />
+    <input type="submit" value="Filter" />
+</p>
+}
+ 
+
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CarModel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MilesDriven)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GallonsFilled)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FillUpDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MilesPerGallon)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CarModel)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MilesDriven)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.GallonsFilled)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FillUpDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MilesPerGallon)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.PersonId }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.PersonId }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.PersonId })
+                </td>
+            </tr>
+        }
+            <tr>
+                <td colspan="6" align="right">
+                    <strong>Average Miles Per Gallon</strong>
+                </td>
+                <td colspan="2" align="left">
+                    @ViewBag.AverageMPG
+                </td>
+            </tr>
+        
+    </table>
+

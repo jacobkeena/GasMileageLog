@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MilesPerGallonProjectModelStoreContainer" CdmEntityContainer="MilesPerGallonProjectEntities">
+    <EntitySetMapping Name="Information">
+      <EntityTypeMapping TypeName="MilesPerGallonProjectModel.Information">
+        <MappingFragment StoreEntitySet="Information">
+          <ScalarProperty Name="PersonId" ColumnName="PersonId" />
+          <ScalarProperty Name="FName" ColumnName="FName" />
+          <ScalarProperty Name="LName" ColumnName="LName" />
+          <ScalarProperty Name="CarModel" ColumnName="CarModel" />
+          <ScalarProperty Name="MilesDriven" ColumnName="MilesDriven" />
+          <ScalarProperty Name="GallonsFilled" ColumnName="GallonsFilled" />
+          <ScalarProperty Name="FillUpDate" ColumnName="FillUpDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

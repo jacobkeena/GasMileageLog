@@ -1,0 +1,6 @@
+C:\Users\jacob\source\repos\MilesPerGallonProject\MilesPerGallonProject\bin\Debug\MilesPerGallonProject.dacpac
+C:\Users\jacob\source\repos\MilesPerGallonProject\MilesPerGallonProject\bin\Debug\MilesPerGallonProject.dll
+C:\Users\jacob\source\repos\MilesPerGallonProject\MilesPerGallonProject\bin\Debug\MilesPerGallonProject.pdb
+C:\Users\jacob\source\repos\MilesPerGallonProject\MilesPerGallonProject\obj\Debug\MilesPerGallonProject.sqlprojAssemblyReference.cache
+C:\Users\jacob\source\repos\MilesPerGallonProject\MilesPerGallonProject\obj\Debug\MilesPerGallonProject.dll
+C:\Users\jacob\source\repos\MilesPerGallonProject\MilesPerGallonProject\obj\Debug\MilesPerGallonProject.pdb

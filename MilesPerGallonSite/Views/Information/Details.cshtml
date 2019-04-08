@@ -1,0 +1,66 @@
+﻿@model MilesPerGallonSite.Models.InformationView
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Information</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CarModel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CarModel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MilesDriven)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MilesDriven)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GallonsFilled)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GallonsFilled)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FillUpDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FillUpDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PersonId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
